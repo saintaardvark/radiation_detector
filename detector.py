@@ -33,13 +33,15 @@ GPIO.add_event_detect(7, GPIO.FALLING, callback=countme)
 
 # Setup influx client
 DB = 'radiation'
-host = '192.168.23.254'
-port = '8086'
+host = 'home.saintaardvarkthecarpeted.com'
+port = '26472'
 INFLUX_USER = 'influxdb'
 INFLUX_PASS = os.getenv('INFLUX_PASS')
 
 influx_client = InfluxDBClient(host=host,
                                port=port,
+                               ssl=True,
+                               verify_ssl=True,
                                username=INFLUX_USER,
                                password=INFLUX_PASS,
                                database=DB)
