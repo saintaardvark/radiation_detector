@@ -5,6 +5,15 @@ msgpack==0.6.1
 python-dateutil==2.8.1
 pytz==2020.1
 requests==2.24.0
-RPi.GPIO==0.7.0
 six==1.15.0
 urllib3==1.25.10
+
+# Note: RPi.GPIO is the older Python package; on a new system (eg, Pi 3)
+# you need to switch to `rpi-lgpio` to emulate the same behaviour.  For
+# details, see:
+# https://stackoverflow.com/questions/75542224/runtimeerror-failed-to-add-edge-detection-on-raspberrypi
+# https://rpi-lgpio.readthedocs.io
+
+# RPi.GPIO
+rpi-lgpio
+
