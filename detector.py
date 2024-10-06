@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-# Source: https://github.com/balenalabs-incubator/background-radiation-monitor/blob/master/counter/counter.py
+# Source:
+# https://github.com/balenalabs-incubator/background-radiation-monitor/blob/master/counter/counter.py
+# (Apache license) but changed for my use.
 
 import datetime
 import os
